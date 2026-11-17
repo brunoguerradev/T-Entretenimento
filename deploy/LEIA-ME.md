@@ -26,7 +26,7 @@ dados nem Node na hospedagem: basta colocar os arquivos na pasta pública do dom
    ```
    python deploy/empacotar.py
    ```
-   Sai `deploy/tentretenimento.zip` (só os arquivos do site).
+   Sai `deploy/t-entretenimento-site.zip` (só os arquivos do site).
 2. No cPanel › *Gerenciador de Arquivos*, abra a pasta do domínio.
 3. Ative *Configurações › Mostrar arquivos ocultos* (para ver o `.htaccess`).
 4. *Carregar* o .zip › clique nele com o botão direito › *Extract* na mesma pasta.
