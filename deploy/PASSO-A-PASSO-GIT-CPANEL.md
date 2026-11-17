@@ -11,21 +11,17 @@ Tempo da primeira vez: uns 20 minutos. Depois, cada atualização leva 1 minuto.
 
 ---
 
-## Etapa 0 – Anote estes dados (no cPanel)
+## Etapa 0 – Pasta do domínio (já configurada)
 
-| O quê | Onde ver | Exemplo |
-|---|---|---|
-| Usuário do cPanel | canto superior direito do cPanel, ou *Informações gerais* na lateral | `tentrete` |
-| Pasta do domínio | *Domínios* › coluna "Raiz do documento" | `public_html` |
-
-Com eles, edite a linha do `.cpanel.yml` (na raiz do projeto):
+A raiz do documento do domínio da T no cPanel é **`public_html/tentretenimento.com.br`**.
+O `.cpanel.yml` (na raiz do projeto) já aponta para ela:
 
 ```yaml
-- export DEPLOYPATH=/home/tentrete/public_html/
+- export DEPLOYPATH=$HOME/public_html/tentretenimento.com.br/
 ```
 
-> Se o domínio da T for um domínio adicional, use a pasta dele, por exemplo
-> `/home/tentrete/public_html/tentretenimento.com.br/`. Termine sempre com `/`.
+`$HOME` é a pasta da conta (`/home/usuario`), então não é preciso escrever o usuário do
+cPanel. Se um dia o domínio mudar de pasta, troque só essa linha (termine sempre com `/`).
 
 ---
 

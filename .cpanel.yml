@@ -1,9 +1,9 @@
 ---
 # Deploy pelo cPanel (Git Version Control > Manage > Pull or Deploy > Deploy HEAD Commit).
-# Copia só os arquivos do site para a pasta pública. Troque USUARIO pelo usuário do cPanel
-# e, se o site ficar num subdomínio/addon, troque public_html pela pasta dele.
+# Copia só os arquivos do site para a pasta do domínio tentretenimento.com.br.
+# $HOME é a pasta da conta no cPanel (/home/usuario), então não precisa escrever o usuário.
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/USUARIO/public_html/
+    - export DEPLOYPATH=$HOME/public_html/tentretenimento.com.br/
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -R index.html .htaccess robots.txt assets css js ingressos painel portaria $DEPLOYPATH

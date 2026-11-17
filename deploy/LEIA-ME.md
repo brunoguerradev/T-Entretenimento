@@ -11,9 +11,8 @@ dados nem Node na hospedagem: basta colocar os arquivos na pasta pública do dom
 
 ## Antes da primeira publicação
 
-1. **Pasta do domínio.** No cPanel, em *Domínios*, veja a "raiz do documento" do
-   domínio da T. Normalmente é `public_html`; em domínio adicional costuma ser
-   `public_html/tentretenimento.com.br` ou parecido.
+1. **Pasta do domínio:** `public_html/tentretenimento.com.br` (raiz do documento
+   do domínio da T no cPanel). É nela que vão os arquivos.
 2. **Faça backup do que está lá hoje.** Em *Gerenciador de Arquivos*, selecione
    o conteúdo da pasta, *Compactar* e baixe o .zip. (Hoje o domínio responde 403.)
 3. **SSL.** Em *SSL/TLS Status*, rode o *AutoSSL* para o domínio. O `.htaccess`
@@ -44,8 +43,7 @@ Para atualizar depois: gere o pacote de novo e repita (o Extract sobrescreve).
 Usa o arquivo `.cpanel.yml` da raiz do projeto, que copia só os arquivos do site
 para a pasta pública.
 
-1. Abra `.cpanel.yml` e troque `USUARIO` pelo usuário do cPanel (e `public_html/`
-   pela pasta do domínio, se for diferente).
+1. O `.cpanel.yml` já aponta para `$HOME/public_html/tentretenimento.com.br/`.
 2. Coloque o projeto num repositório Git (GitHub privado, por exemplo) e faça
    commit de tudo, inclusive `.cpanel.yml` e `.htaccess`.
 3. No cPanel › *Git™ Version Control* › *Create*:
