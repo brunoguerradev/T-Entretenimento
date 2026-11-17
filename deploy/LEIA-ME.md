@@ -26,7 +26,7 @@ dados nem Node na hospedagem: basta colocar os arquivos na pasta pública do dom
    ```
    python deploy/empacotar.py
    ```
-   Sai `deploy/t-entretenimento-site.zip` (só os arquivos do site).
+   Sai `deploy/tentretenimento.zip` (só os arquivos do site).
 2. No cPanel › *Gerenciador de Arquivos*, abra a pasta do domínio.
 3. Ative *Configurações › Mostrar arquivos ocultos* (para ver o `.htaccess`).
 4. *Carregar* o .zip › clique nele com o botão direito › *Extract* na mesma pasta.
@@ -50,7 +50,7 @@ para a pasta pública.
    - *Clone a Repository*: ligado;
    - *Clone URL*: o endereço do repositório (repositório privado precisa de uma
      chave SSH do cPanel cadastrada como *deploy key* no GitHub);
-   - *Repository Path*: uma pasta **fora** do public_html, ex. `repositorios/t-entretenimento`.
+   - *Repository Path*: uma pasta **fora** do public_html, ex. `repositorios/tentretenimento`.
 4. Em *Manage › Pull or Deploy*: *Update from Remote* e depois **Deploy HEAD Commit**.
 
 Para atualizar depois: commit + push no Git, e no cPanel *Update from Remote* +

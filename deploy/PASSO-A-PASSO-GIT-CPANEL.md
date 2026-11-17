@@ -28,15 +28,15 @@ cPanel. Se um dia o domínio mudar de pasta, troque só essa linha (termine semp
 ## Etapa 1 – Criar o repositório no GitHub
 
 1. Entre em https://github.com/new
-2. *Repository name*: `t-entretenimento-site`
+2. *Repository name*: `tentretenimento`
 3. Escolha **Public** ou **Private**:
    - **Public** (mais simples): o cPanel clona sem chave. O código de um site estático
      já é visível para qualquer visitante, então não há segredo exposto.
    - **Private**: exige a chave da Etapa 3. Use se não quiser o código listado no GitHub.
 4. **Não** marque "Add a README", ".gitignore" nem "license" (o projeto já tem os arquivos).
 5. *Create repository*. Copie o endereço que aparece:
-   - Público: `https://github.com/SEU-USUARIO/t-entretenimento-site.git`
-   - Privado: `git@github.com:SEU-USUARIO/t-entretenimento-site.git` (aba **SSH**)
+   - Público: `https://github.com/SEU-USUARIO/tentretenimento.git`
+   - Privado: `git@github.com:SEU-USUARIO/tentretenimento.git` (aba **SSH**)
 
 ---
 
@@ -55,7 +55,7 @@ Ou pelo terminal, na pasta do projeto:
 git init -b main
 git add .
 git commit -m "Site da T Entretenimento"
-git remote add origin https://github.com/SEU-USUARIO/t-entretenimento-site.git
+git remote add origin https://github.com/SEU-USUARIO/tentretenimento.git
 git push -u origin main
 ```
 
@@ -89,7 +89,7 @@ git push -u origin main
 2. Preencha:
    - **Clone a Repository**: ligado.
    - **Clone URL**: o endereço da Etapa 1 (HTTPS se público, `git@github.com:...` se privado).
-   - **Repository Path**: `repositorios/t-entretenimento`
+   - **Repository Path**: `repositorios/tentretenimento`
      (**fora** do `public_html`: assim os arquivos de trabalho não ficam acessíveis pela web).
    - **Repository Name**: `T Entretenimento`.
 3. **Create**. O cPanel baixa o repositório (pode levar alguns segundos).
@@ -117,7 +117,7 @@ git push -u origin main
 
 > O botão *Deploy* só aparece se o `.cpanel.yml` estiver na raiz do repositório e
 > se não houver alteração "solta" no repositório do servidor (nunca edite arquivos
-> dentro de `repositorios/t-entretenimento` pelo Gerenciador de Arquivos).
+> dentro de `repositorios/tentretenimento` pelo Gerenciador de Arquivos).
 
 ---
 
