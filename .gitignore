@@ -1,0 +1,4 @@
+# ferramentas locais
+.claude/
+# pacotes gerados por deploy/empacotar.py
+deploy/*.zip

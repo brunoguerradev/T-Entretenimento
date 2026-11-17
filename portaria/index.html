@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#170914">
+  <title>Portaria – T Ingressos</title>
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=21">
+  <link rel="stylesheet" href="../ingressos/css/ingressos.css?v=2">
+</head>
+<body class="tix tix-gate">
+  <div class="tix-demo"><b>Protótipo</b> · valida os ingressos guardados neste navegador</div>
+  <header class="tix-top">
+    <div class="container tix-top__inner">
+      <a href="../" class="brand" aria-label="Site da T Entretenimento">
+        <img src="../assets/logo.svg" alt="" width="48" height="48">
+        <span class="brand__name">entretenimento</span>
+      </a>
+      <span class="tix-top__title">Portaria</span>
+      <nav class="tix-top__nav" aria-label="Portaria"><a href="../painel/">Painel</a></nav>
+    </div>
+  </header>
+  <div class="tix-rainbow" aria-hidden="true"></div>
+
+  <main class="tix-wrap">
+    <label class="sr-only" for="evento">Evento</label>
+    <select id="evento"></select>
+
+    <div class="tix-counter"><span>Entradas</span><b id="contador">0 / 0</b></div>
+
+    <div class="tix-scan" id="scan">
+      <div class="tix-scan__off" id="scanOff">
+        <p style="margin:0 0 12px">Aponte a câmera para o QR code do ingresso.</p>
+        <button type="button" class="btn btn--coral btn--lg" id="ligar">Ligar câmera</button>
+      </div>
+    </div>
+
+    <div class="tix-result tix-result--idle" id="resultado" role="status" aria-live="assertive">
+      <h2>Pronto</h2><p>Leia um QR code ou digite o código.</p>
+    </div>
+
+    <form class="tix-manual" id="manual" autocomplete="off">
+      <label class="sr-only" for="codigo">Código do ingresso</label>
+      <input id="codigo" placeholder="T-XXXX-XXXX" autocapitalize="characters" spellcheck="false">
+      <button class="btn btn--coral" type="submit">Validar</button>
+    </form>
+
+    <h3 style="margin:22px 0 10px;font-size:15px;text-transform:uppercase;letter-spacing:.05em">Últimas leituras</h3>
+    <ul class="tix-recent" id="recentes"><li><span style="opacity:.7">Nenhuma leitura ainda.</span></li></ul>
+
+    <details class="tix-test" id="teste">
+      <summary>Ingressos para testar (protótipo)</summary>
+      <p>Clique em um código para simular a leitura do QR code.</p>
+      <div id="codigosTeste"></div>
+    </details>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js" defer></script>
+  <script src="../ingressos/js/dados.js?v=2"></script>
+  <script src="portaria.js?v=1"></script>
+</body>
+</html>

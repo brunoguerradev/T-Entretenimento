@@ -1,0 +1,4 @@
+# Servidor do cPanel é Linux: arquivos de texto sempre com quebra de linha LF
+* text=auto eol=lf
+*.svg text eol=lf
+*.zip binary

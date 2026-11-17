@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Painel do produtor – T Ingressos</title>
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=21">
+  <link rel="stylesheet" href="../ingressos/css/ingressos.css?v=2">
+</head>
+<body class="tix">
+  <div class="tix-demo"><b>Protótipo</b> · dados de demonstração guardados neste navegador · <a href="#" id="restaurar">Restaurar dados de demonstração</a></div>
+
+  <header class="tix-top">
+    <div class="container tix-top__inner">
+      <a href="../" class="brand" aria-label="Site da T Entretenimento">
+        <img src="../assets/logo.svg" alt="" width="48" height="48">
+        <span class="brand__name">entretenimento</span>
+      </a>
+      <span class="tix-top__title">Painel</span>
+      <nav class="tix-top__nav" aria-label="Painel">
+        <a href="#/" data-nav="geral">Visão geral</a>
+        <a href="#/eventos" data-nav="eventos">Eventos</a>
+        <a href="#/novo" data-nav="novo">Novo evento</a>
+        <a href="../portaria/">Portaria</a>
+        <a href="../ingressos/">Loja</a>
+      </nav>
+    </div>
+  </header>
+  <div class="tix-rainbow" aria-hidden="true"></div>
+
+  <main id="app" class="tix-wrap" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> T Entretenimento · área interna</span>
+      <span data-foxes></span>
+    </div>
+  </footer>
+
+  <script src="../ingressos/js/dados.js?v=2"></script>
+  <script src="painel.js?v=1"></script>
+  <script src="../js/foxes-assinatura.js?v=1"></script>
+</body>
+</html>

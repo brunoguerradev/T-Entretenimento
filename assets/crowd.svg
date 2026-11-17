@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" preserveAspectRatio="xMidYMax slice">
+  <g fill="#0d050c" stroke="#0d050c" stroke-linecap="round">
+    <!-- braços levantados -->
+    <line x1="14" y1="95" x2="2" y2="38" stroke-width="9"/>
+    <line x1="58" y1="100" x2="48" y2="30" stroke-width="9"/>
+    <line x1="80" y1="100" x2="92" y2="34" stroke-width="9"/>
+    <line x1="152" y1="92" x2="140" y2="22" stroke-width="9"/>
+    <line x1="244" y1="98" x2="236" y2="40" stroke-width="9"/>
+    <line x1="266" y1="98" x2="282" y2="36" stroke-width="9"/>
+    <line x1="338" y1="95" x2="326" y2="26" stroke-width="9"/>
+    <line x1="398" y1="100" x2="392" y2="44" stroke-width="9"/>
+    <!-- cabeças -->
+    <circle cx="25" cy="78" r="14" stroke="none"/>
+    <circle cx="69" cy="84" r="15" stroke="none"/>
+    <circle cx="114" cy="72" r="14" stroke="none"/>
+    <circle cx="163" cy="76" r="15" stroke="none"/>
+    <circle cx="208" cy="86" r="14" stroke="none"/>
+    <circle cx="255" cy="80" r="15" stroke="none"/>
+    <circle cx="303" cy="74" r="14" stroke="none"/>
+    <circle cx="349" cy="80" r="15" stroke="none"/>
+    <circle cx="392" cy="84" r="14" stroke="none"/>
+    <!-- ombros / corpos -->
+    <path stroke="none" d="M0 140V112c0-12 10-20 25-20s25 8 25 20c0-14 8-22 19-22s21 8 21 22c0-14 10-24 24-24s24 10 24 24c0-14 10-22 25-22s24 8 24 22c0-12 9-20 21-20s24 8 24 20c0-14 9-22 23-22s25 8 25 22c0-14 10-24 24-24s23 10 23 24c0-14 10-22 23-22s23 8 23 22c0-12 9-20 20-20s23 8 23 20v28Z"/>
+  </g>
+  <!-- luzes de celular -->
+  <g fill="#fff">
+    <rect x="44" y="22" width="8" height="12" rx="2" opacity=".9"/>
+    <rect x="136" y="14" width="8" height="12" rx="2" opacity=".9"/>
+    <rect x="278" y="28" width="8" height="12" rx="2" opacity=".9"/>
+  </g>
+</svg>

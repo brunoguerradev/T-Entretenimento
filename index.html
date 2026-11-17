@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>T Entretenimento – Agenciamento Artístico e Produção de Shows</title>
+  <meta name="description" content="T Entretenimento: agenciamento artístico e produção de shows em Ponta Grossa/PR. Contrate shows, confira a agenda e os artistas.">
+  <meta name="theme-color" content="#fe5e61">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=21">
+  <link rel="stylesheet" href="ingressos/css/ingressos.css?v=2">
+</head>
+<body>
+
+  <!-- ===== TOPO (coral) ===== -->
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <a href="#inicio" class="brand" aria-label="T Entretenimento – início">
+          <img src="assets/logo.svg" alt="" width="70" height="70">
+          <span class="brand__name">entretenimento</span>
+        </a>
+
+        <div class="topbar__actions">
+          <label class="select-pill">
+            <span class="sr-only">Selecione um artista</span>
+            <select class="js-artist-select" aria-label="Selecione um artista">
+              <option value="">Selecione um artista</option>
+            </select>
+          </label>
+          <a href="#contato" class="btn btn--blue btn--play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Contrate um show
+          </a>
+        </div>
+
+        <div class="social">
+          <a href="https://www.instagram.com/tentretenimento/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-instagram"/></svg>
+          </a>
+          <a class="js-whatsapp" href="https://wa.me/5542984079999" target="_blank" rel="noopener" aria-label="WhatsApp (42) 98407-9999">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          </a>
+          <a href="https://www.threads.net/@tentretenimento" target="_blank" rel="noopener" aria-label="Threads">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-threads"/></svg>
+          </a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ===== MENU (roxo) ===== -->
+    <nav class="mainnav" aria-label="Principal">
+      <div class="container mainnav__inner">
+        <!-- ações no celular (como na Rádio T mobile) -->
+        <div class="mobile-actions">
+          <label class="select-pill select-pill--sm">
+            <span class="sr-only">Selecione um artista</span>
+            <select class="js-artist-select" aria-label="Selecione um artista">
+              <option value="">Selecione um artista</option>
+            </select>
+          </label>
+          <a href="#contato" class="btn btn--blue btn--play btn--sm">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Contrate
+          </a>
+        </div>
+        <div class="mainnav__links" id="mainNav">
+          <a href="#empresa">A Empresa</a>
+          <a href="#artistas">Artistas</a>
+          <a href="#agenda">Agenda</a>
+          <a href="ingressos/">Ingressos</a>
+          <a href="#eventos">Eventos</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </div>
+    </nav>
+    <div class="rainbow" aria-hidden="true"></div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ===== BANNER ===== -->
+    <section class="hero" aria-roledescription="carrossel" aria-label="Destaques">
+      <div class="hero__bg" aria-hidden="true"><i class="hero__glow hero__glow--1"></i><i class="hero__glow hero__glow--2"></i><i class="hero__glow hero__glow--3"></i></div>
+
+      <div class="container hero__inner">
+        <div class="hero__slides">
+
+          <article class="slide is-active" aria-roledescription="slide" aria-label="1 de 4">
+            <div class="slide__text">
+              <span class="slide__kicker">T Entretenimento</span>
+              <h1>O show começa <strong>muito antes do palco</strong></h1>
+              <p>Produção de shows, agenciamento de artistas e eventos completos, de Ponta Grossa para todo o Brasil.</p>
+              <div class="slide__ctas">
+                <a href="#contato" class="btn btn--coral btn--lg">Contrate um show</a>
+                <a href="#agenda" class="btn btn--ghost btn--lg">Ver agenda</a>
+              </div>
+            </div>
+            <div class="slide__art art-orbit" aria-hidden="true">
+              <div class="art-orbit__ring"></div>
+              <img class="art-orbit__logo" src="assets/logo.svg" alt="" width="220" height="220">
+              <span class="art-chip art-chip--a"><i style="--c:var(--c-teal)"></i>Agenciamento</span>
+              <span class="art-chip art-chip--b"><i style="--c:var(--c-yellow)"></i>Produção de shows</span>
+              <span class="art-chip art-chip--c"><i style="--c:var(--coral)"></i>Venda de ingressos</span>
+            </div>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="2 de 4">
+            <div class="slide__text">
+              <span class="slide__kicker">Artistas</span>
+              <h1>O artista certo <strong>para o seu público</strong></h1>
+              <p>Sertanejo, pagode, bandas, shows nacionais e regionais: negociamos e trazemos a atração ideal para a sua festa.</p>
+              <div class="slide__ctas">
+                <a href="#artistas" class="btn btn--coral btn--lg">Conheça os artistas</a>
+              </div>
+            </div>
+            <div class="slide__art art-fan" aria-hidden="true">
+              <div class="art-card" style="--r:-10deg;--x:-62%;--g:linear-gradient(135deg,#2bb8c9,#2a4d8f)"><div class="art-card__img">♪</div><b>Pagode</b><small>Grupos e rodas</small></div>
+              <div class="art-card" style="--r:10deg;--x:62%;--g:linear-gradient(135deg,#f9d423,#f7941d)"><div class="art-card__img">♫</div><b>Bandas</b><small>Bailes e festas</small></div>
+              <div class="art-card art-card--front" style="--r:0deg;--x:0%;--g:linear-gradient(135deg,#fe5e61,#5d2557)"><div class="art-card__img">★<span class="card__badge">Em turnê</span></div><b>Sertanejo</b><small>Shows nacionais</small></div>
+            </div>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="3 de 4">
+            <div class="slide__text">
+              <span class="slide__kicker">Produção de eventos</span>
+              <h1>Festas, rodeios <strong>e grandes palcos</strong></h1>
+              <p>Palco, som, luz, logística e equipe: cuidamos de toda a estrutura para eventos de todos os tamanhos.</p>
+              <div class="slide__ctas">
+                <a href="#servicos" class="btn btn--coral btn--lg">Conheça os serviços</a>
+              </div>
+            </div>
+            <div class="slide__art art-stage" aria-hidden="true">
+              <div class="art-stage__screen">
+                <i class="art-spot" style="--x:22%;--c:#2bb8c9"></i><i class="art-spot" style="--x:50%;--c:#f9d423"></i><i class="art-spot" style="--x:78%;--c:#fe5e61"></i>
+                <div class="art-stage__deck"></div>
+                <div class="art-stage__crowd"></div>
+              </div>
+              <span class="art-chip art-chip--d"><i style="--c:var(--c-yellow)"></i>Palco e estrutura</span>
+              <span class="art-chip art-chip--e"><i style="--c:var(--c-teal)"></i>Som e luz</span>
+              <span class="art-chip art-chip--f"><i style="--c:var(--c-green)"></i>Logística e equipe</span>
+            </div>
+          </article>
+
+          <article class="slide" aria-roledescription="slide" aria-label="4 de 4">
+            <div class="slide__text">
+              <span class="slide__kicker">Contratantes</span>
+              <h1>Prefeituras, clubes <strong>e empresas</strong></h1>
+              <p>Do primeiro contato à última música, uma única equipe cuidando do seu show com transparência e pontualidade.</p>
+              <div class="slide__ctas">
+                <a href="#contato" class="btn btn--coral btn--lg">Peça um orçamento</a>
+                <a class="btn btn--ghost btn--lg js-whatsapp" href="https://wa.me/5542984079999" target="_blank" rel="noopener">Falar no WhatsApp</a>
+              </div>
+            </div>
+            <div class="slide__art art-list" aria-hidden="true">
+              <div class="art-list__card">
+                <b class="art-list__title">Seu show com a T</b>
+                <ul>
+                  <li><i></i>Proposta e contrato</li>
+                  <li><i></i>Rider técnico e estrutura</li>
+                  <li><i></i>Transporte e hospedagem</li>
+                  <li><i></i>Divulgação do evento</li>
+                </ul>
+              </div>
+              <span class="art-chip art-chip--g"><i style="--c:#25d366"></i>Atendimento pelo WhatsApp</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="hero__nav">
+          <div class="hero__tabs" role="tablist" aria-label="Escolher destaque">
+            <button role="tab" type="button"><span class="hero__num">01</span><span class="hero__label">O show</span><span class="hero__bar"><i></i></span></button>
+            <button role="tab" type="button"><span class="hero__num">02</span><span class="hero__label">Artistas</span><span class="hero__bar"><i></i></span></button>
+            <button role="tab" type="button"><span class="hero__num">03</span><span class="hero__label">Produção</span><span class="hero__bar"><i></i></span></button>
+            <button role="tab" type="button"><span class="hero__num">04</span><span class="hero__label">Contratantes</span><span class="hero__bar"><i></i></span></button>
+          </div>
+          <div class="hero__arrows">
+            <button class="hero__arrow hero__arrow--prev" type="button" aria-label="Destaque anterior"><svg viewBox="0 0 24 24"><path d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"/></svg></button>
+            <button class="hero__arrow hero__arrow--next" type="button" aria-label="Próximo destaque"><svg viewBox="0 0 24 24"><path d="M8.6 16.6 10 18l6-6-6-6-1.4 1.4 4.6 4.6z"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__crowd" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== A EMPRESA + SERVIÇOS ===== -->
+    <section class="section section--purple" id="empresa">
+      <div class="container about">
+        <div class="about__logo">
+          <img src="assets/logo.svg" alt="T Entretenimento" width="260" height="260">
+        </div>
+        <div class="about__text">
+          <h2 class="title title--light title--left">A <strong>Empresa</strong></h2>
+          <p>A <strong>T Entretenimento</strong> é uma empresa de agenciamento artístico e produção de shows sediada em Ponta Grossa, no Paraná. Do primeiro contato à última música, cuidamos de cada etapa para que artista, contratante e público vivam uma noite inesquecível.</p>
+          <ul class="features">
+            <li style="--accent:var(--c-teal)">
+              <span class="features__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 16H5V9h14ZM7 11h5v5H7Z"/></svg></span>
+              <strong>Agenda de shows</strong><span>Datas, cidades e status de cada apresentação em um só lugar.</span>
+            </li>
+            <li style="--accent:var(--c-yellow)">
+              <span class="features__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v4a3 3 0 0 0 0 6v4H3v-4a3 3 0 0 0 0-6Zm6 2v2h2V7Zm0 4v2h2v-2Zm0 4v2h2v-2Z"/></svg></span>
+              <strong>Venda de ingressos</strong><span>Ingressos online por setor, lote e categoria.</span>
+            </li>
+            <li style="--accent:var(--coral)">
+              <span class="features__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h4v4H4Zm6 0h4v4h-4Zm6 0h4v4h-4ZM4 10h4v4H4Zm6 0h4v4h-4Zm6 0h4v4h-4ZM4 16h16v4H4Z"/></svg></span>
+              <strong>Mapa de mesas</strong><span>Palco, mesas, VIP e pista com ocupação em tempo real.</span>
+            </li>
+            <li style="--accent:var(--c-green)">
+              <span class="features__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Zm-1 7V3.5L18.5 9ZM8 13h8v2H8Zm0 4h5v2H8Z"/></svg></span>
+              <strong>Contratos e riders</strong><span>Propostas, contratos e rider técnico organizados por show.</span>
+            </li>
+            <li style="--accent:var(--c-orange)">
+              <span class="features__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8h-3V4H3a1 1 0 0 0-1 1v11h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5Zm-13 9.5A1.5 1.5 0 1 1 8.5 16 1.5 1.5 0 0 1 7 17.5Zm10 0a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5ZM17 12V9.5h2.5l2 2.5Z"/></svg></span>
+              <strong>Logística</strong><span>Transporte, hospedagem e camarim da equipe e do artista.</span>
+            </li>
+            <li style="--accent:var(--c-violet)">
+              <span class="features__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 11v2h4v-2Zm-2 6.6 3.2 2.4 1.2-1.6-3.2-2.4Zm4.4-12L19.2 4 16 6.4l1.2 1.6ZM4 9a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h1v4h2v-4h1l5 3V6L8 9Zm11.5 3A4.5 4.5 0 0 0 14 8.6v6.8a4.5 4.5 0 0 0 1.5-3.4Z"/></svg></span>
+              <strong>Divulgação</strong><span>Artes, vídeos e campanhas para redes sociais e rádio.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container" id="servicos">
+        <h2 class="title title--light">Nossos <strong>Serviços</strong></h2>
+        <div class="services">
+          <article class="service" style="--accent:var(--c-teal)">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-3.1A7 7 0 0 0 19 11Z"/></svg></div>
+            <h3>Agenciamento artístico</h3>
+            <p>Gestão de carreira, agenda e negociação de shows para artistas em todo o país.</p>
+          </article>
+          <article class="service" style="--accent:var(--c-yellow)">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h16v2H4zM6 4h2l1 10H5zm10 0h2l1 10h-4zM10 8h4v6h-4z"/></svg></div>
+            <h3>Produção de shows</h3>
+            <p>Palco, som, luz, logística, camarim e equipe: a estrutura completa do seu evento.</p>
+          </article>
+          <article class="service" style="--accent:var(--c-orange)">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v4a3 3 0 0 0 0 6v4H3v-4a3 3 0 0 0 0-6Zm6 2v2h2V7Zm0 4v2h2v-2Zm0 4v2h2v-2Z"/></svg></div>
+            <h3>Venda de shows</h3>
+            <p>Para prefeituras, festas, rodeios, clubes e eventos corporativos — o artista certo para o seu público.</p>
+          </article>
+          <article class="service" style="--accent:var(--c-green)">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg></div>
+            <h3>Eventos próprios</h3>
+            <p>Realizamos eventos com venda de ingressos, mapa de mesas e ativações de marca.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EVENTOS + INSTAGRAM (como "T News" + "Instagram") ===== -->
+    <section class="section section--radial" id="eventos">
+      <div class="container">
+        <h2 class="title title--light">T <strong>Eventos</strong></h2>
+        <div class="carousel carousel--news" data-autoplay="5000">
+          <button class="carousel__btn carousel__btn--square prev" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"/></svg></button>
+          <div class="carousel__track" id="newsTrack"></div>
+          <button class="carousel__btn carousel__btn--square next" aria-label="Próximo"><svg viewBox="0 0 24 24"><path d="M8.6 16.6 10 18l6-6-6-6-1.4 1.4 4.6 4.6z"/></svg></button>
+        </div>
+      </div>
+
+      <div class="container center" id="instagram">
+        <h2 class="title title--light">Instagram</h2>
+        <a class="ig-handle" href="https://www.instagram.com/tentretenimento/" target="_blank" rel="noopener">
+          <span class="ig-handle__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-instagram"/></svg></span>
+          @tentretenimento
+        </a>
+        <div>
+          <a href="https://www.instagram.com/tentretenimento/" target="_blank" rel="noopener" class="btn btn--sky">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-instagram"/></svg>
+            Seguir no Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INGRESSOS À VENDA ===== -->
+    <section class="section section--coral" id="ingressos">
+      <div class="container">
+        <h2 class="title">Ingressos <strong style="font-weight:900">à venda</strong></h2>
+        <div class="carousel carousel--tix" data-autoplay="6000">
+          <button class="carousel__btn carousel__btn--round prev" aria-label="Evento anterior"><svg viewBox="0 0 24 24"><path d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"/></svg></button>
+          <div class="carousel__track" id="homeIngressos"></div>
+          <button class="carousel__btn carousel__btn--round next" aria-label="Próximo evento"><svg viewBox="0 0 24 24"><path d="M8.6 16.6 10 18l6-6-6-6-1.4 1.4 4.6 4.6z"/></svg></button>
+        </div>
+        <div class="center" style="margin-top:40px">
+          <a href="ingressos/" class="btn btn--purple btn--lg">Ver todos os ingressos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRÓXIMOS SHOWS (como "Promoções acontecendo") ===== -->
+    <section class="section section--purple" id="agenda">
+      <div class="container">
+        <h2 class="title title--light">Próximos <strong>Shows</strong></h2>
+        <div class="agenda-filter" role="group" aria-label="Filtrar por estado"></div>
+        <ul class="agenda" id="agendaList"></ul>
+      </div>
+    </section>
+
+    <!-- ===== ARTISTAS (como "Programação") ===== -->
+    <section class="section section--coral" id="artistas">
+      <div class="container">
+        <h2 class="title">Artistas</h2>
+        <div class="carousel carousel--cards" data-autoplay="5000">
+          <button class="carousel__btn carousel__btn--round prev" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"/></svg></button>
+          <div class="carousel__track" id="artistTrack"></div>
+          <button class="carousel__btn carousel__btn--round next" aria-label="Próximo"><svg viewBox="0 0 24 24"><path d="M8.6 16.6 10 18l6-6-6-6-1.4 1.4 4.6 4.6z"/></svg></button>
+        </div>
+        <div class="center">
+          <a href="#contato" class="btn btn--purple">Quero contratar um artista</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="site-footer" id="contato">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logo.svg" alt="T Entretenimento" width="150" height="150">
+        <span class="brand__name">entretenimento</span>
+        <div class="social">
+          <a href="https://www.instagram.com/tentretenimento/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-instagram"/></svg>
+          </a>
+          <a class="js-whatsapp" href="https://wa.me/5542984079999" target="_blank" rel="noopener" aria-label="WhatsApp (42) 98407-9999">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          </a>
+          <a href="https://www.threads.net/@tentretenimento" target="_blank" rel="noopener" aria-label="Threads">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-threads"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__contact">
+        <h3>Fale conosco</h3>
+        <form class="contact-form" id="contactForm" novalidate>
+          <label><span class="sr-only">Nome</span><input name="nome" placeholder="Seu nome *" autocomplete="name" required></label>
+          <div class="contact-form__row">
+            <label><span class="sr-only">WhatsApp</span><input name="telefone" type="tel" inputmode="tel" placeholder="Seu WhatsApp *" autocomplete="tel" required></label>
+            <label><span class="sr-only">Data do evento</span><input name="data" type="text" placeholder="Data do evento" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'"></label>
+          </div>
+          <label><span class="sr-only">Cidade e tipo de evento</span><input name="evento" placeholder="Cidade e tipo de evento"></label>
+          <label><span class="sr-only">Artista de interesse</span>
+            <select name="artista" id="formArtist"><option value="">Artista de interesse</option></select>
+          </label>
+          <label><span class="sr-only">Mensagem</span><textarea name="mensagem" rows="3" placeholder="Conte sobre o seu evento *" required></textarea></label>
+          <p class="contact-form__error" id="formError" role="alert" hidden></p>
+          <button class="btn btn--coral" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+          <p class="contact-form__ok" id="formOk" role="status" hidden>
+            Abrimos o WhatsApp com a sua mensagem pronta. É só tocar em <strong>enviar</strong>.
+            Se não abriu, <a href="#" id="formOkLink" target="_blank" rel="noopener">clique aqui</a>.
+          </p>
+        </form>
+        <address>
+          <strong>PONTA GROSSA – PR</strong>
+          Av. Carlos Cavalcanti, 1386<br>
+          <a class="js-whatsapp" href="https://wa.me/5542984079999" target="_blank" rel="noopener">WhatsApp (42) 98407-9999</a><br>
+          <a href="https://www.instagram.com/tentretenimento/" target="_blank" rel="noopener">@tentretenimento</a>
+        </address>
+      </div>
+
+      <div class="footer__nav">
+        <h3>Navegue</h3>
+        <a href="#empresa">A Empresa</a>
+        <a href="#artistas">Artistas</a>
+        <a href="#agenda">Agenda</a>
+        <a href="ingressos/">Ingressos</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> T Entretenimento. Todos os direitos reservados.</span>
+      <span data-foxes></span>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a class="wa-fab js-whatsapp" href="https://wa.me/5542984079999" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp: (42) 98407-9999">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    <span class="wa-fab__label">Fale com a T</span>
+  </a>
+
+  <!-- ícones reutilizáveis -->
+  <svg width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path d="M12 7.3A4.7 4.7 0 1 0 16.7 12 4.7 4.7 0 0 0 12 7.3Zm0 7.7a3 3 0 1 1 3-3 3 3 0 0 1-3 3Zm6-7.9a1.1 1.1 0 1 1-1.1-1.1A1.1 1.1 0 0 1 18 7.1ZM21.1 8.2a5.4 5.4 0 0 0-1.5-3.8 5.4 5.4 0 0 0-3.8-1.5C14.3 2.8 9.7 2.8 8.2 2.9a5.4 5.4 0 0 0-3.8 1.5A5.4 5.4 0 0 0 2.9 8.2c-.1 1.5-.1 6.1 0 7.6a5.4 5.4 0 0 0 1.5 3.8 5.4 5.4 0 0 0 3.8 1.5c1.5.1 6.1.1 7.6 0a5.4 5.4 0 0 0 3.8-1.5 5.4 5.4 0 0 0 1.5-3.8c.1-1.5.1-6.1 0-7.6Zm-2 9.2a3.1 3.1 0 0 1-1.7 1.7c-1.2.5-4 .4-5.4.4s-4.2.1-5.4-.4a3.1 3.1 0 0 1-1.7-1.7c-.5-1.2-.4-4-.4-5.4s-.1-4.2.4-5.4a3.1 3.1 0 0 1 1.7-1.7c1.2-.5 4-.4 5.4-.4s4.2-.1 5.4.4a3.1 3.1 0 0 1 1.7 1.7c.5 1.2.4 4 .4 5.4s.1 4.2-.4 5.4Z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+    <symbol id="i-threads" viewBox="0 0 24 24"><path d="M16.7 11.1l-.3-.1c-.2-3-1.8-4.7-4.6-4.7-1.7 0-3.1.7-3.9 2l1.5 1c.6-.9 1.6-1.1 2.4-1.1 1 0 1.7.3 2.1.9.3.4.5 1 .6 1.7a11 11 0 0 0-2.5-.1c-2.5.1-4.1 1.6-4 3.6.1 1 .6 1.9 1.4 2.4.7.5 1.6.7 2.6.6 1.3-.1 2.3-.5 3-1.4.5-.7.9-1.6 1-2.7.6.4 1.1.8 1.3 1.4.4 1 .4 2.6-.9 3.9-1.1 1.1-2.5 1.6-4.6 1.6-2.3 0-4.1-.8-5.2-2.2-1.1-1.4-1.6-3.3-1.6-5.8s.6-4.4 1.6-5.8c1.1-1.4 2.9-2.2 5.2-2.2 2.4 0 4.2.8 5.4 2.2.6.7 1 1.6 1.3 2.6l1.8-.5c-.4-1.3-.9-2.4-1.7-3.3C17.6 3.2 15.3 2.2 12.4 2.2h-.1C9.4 2.2 7.2 3.2 5.7 5 4.4 6.7 3.7 9 3.7 12s.7 5.3 2 7c1.5 1.8 3.7 2.8 6.6 2.8h.1c2.6 0 4.4-.7 5.9-2.1 2-2 1.9-4.4 1.3-5.9-.5-1.1-1.4-2-2.9-2.7Zm-4.4 4.2c-1.1.1-2.2-.4-2.2-1.4 0-.8.6-1.6 2.3-1.7h.6c.6 0 1.2.1 1.7.2-.2 2.4-1.3 2.8-2.4 2.9Z"/></symbol>
+  </svg>
+
+  <script src="js/data.js?v=16"></script>
+  <script src="ingressos/js/dados.js?v=2"></script>
+  <script src="js/main.js?v=19"></script>
+  <script src="js/wa-fab.js?v=1"></script>
+</body>
+</html>
