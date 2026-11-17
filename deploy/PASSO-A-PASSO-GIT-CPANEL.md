@@ -28,15 +28,15 @@ cPanel. Se um dia o domínio mudar de pasta, troque só essa linha (termine semp
 ## Etapa 1 – Criar o repositório no GitHub
 
 1. Entre em https://github.com/new
-2. *Repository name*: `tentretenimento`
+2. *Repository name*: `T-Entretenimento` (já criado, privado)
 3. Escolha **Public** ou **Private**:
    - **Public** (mais simples): o cPanel clona sem chave. O código de um site estático
      já é visível para qualquer visitante, então não há segredo exposto.
    - **Private**: exige a chave da Etapa 3. Use se não quiser o código listado no GitHub.
 4. **Não** marque "Add a README", ".gitignore" nem "license" (o projeto já tem os arquivos).
 5. *Create repository*. Copie o endereço que aparece:
-   - Público: `https://github.com/SEU-USUARIO/tentretenimento.git`
-   - Privado: `git@github.com:SEU-USUARIO/tentretenimento.git` (aba **SSH**)
+   - Público: `https://github.com/brunoguerradev/T-Entretenimento.git`
+   - Privado: `git@github.com:brunoguerradev/T-Entretenimento.git` (aba **SSH**)
 
 ---
 
@@ -55,7 +55,7 @@ Ou pelo terminal, na pasta do projeto:
 git init -b main
 git add .
 git commit -m "Site da T Entretenimento"
-git remote add origin https://github.com/SEU-USUARIO/tentretenimento.git
+git remote add origin https://github.com/brunoguerradev/T-Entretenimento.git
 git push -u origin main
 ```
 
